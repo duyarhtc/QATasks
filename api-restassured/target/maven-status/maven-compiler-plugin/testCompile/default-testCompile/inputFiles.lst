@@ -1,0 +1,15 @@
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/base/BaseTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/base/RequestSpecs.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/base/ResponseSpecs.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/config/ConfigReader.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/CreatePetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/CreatePetWithoutBodyTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/CreatePetWrongContentTypeTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/DeletePetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/ReadDeletedPetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/ReadNegativeIdPetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/ReadNonExistingPetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/ReadPetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/tests/UpdatePetTest.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/utils/AllureSteps.java
+/Users/haticeduyarkeskin/Desktop/Insider QA Task/PetAPITest/src/test/java/utils/JsonUtil.java

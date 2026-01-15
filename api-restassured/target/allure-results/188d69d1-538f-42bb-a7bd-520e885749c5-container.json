@@ -1,0 +1,1 @@
+{"uuid":"188d69d1-538f-42bb-a7bd-520e885749c5","name":"tests.CreatePetWithoutBodyTest","children":["5cbb3297-fd18-4b8a-aeb5-0a6ba1779889"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1768510227641,"stop":1768510227782}],"afters":[],"start":1768510227624,"stop":1768510231486}

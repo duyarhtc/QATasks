@@ -1,0 +1,55 @@
+﻿Test Scenarios – n11 Search Module Load Test (Mock + Real)
+Test Objective
+The purpose of this test is to investigate the behavior and performance of the search module triggered from the header and observe the listing of search results under minimal load (1 user).
+Since n11.com may block direct automated requests, a mock server
+(Postman Echo) is also used to simulate responses and validate test logic.
+
+
+Scenario 1 – Real Site Search (n11.com)
+Description:
+User performs a search on the n11.com header search field using a valid keyword.
+Steps:
+1. Thread Group → 1 virtual user, Loop count = 1
+2. Add HTTP Header Manager → set User-Agent, Accept headers
+3. Add HTTP Request → GET request to n11.com search endpoint (www.n11.com)
+   - Parameters: keyword = valid product (e.g., “iphone”)
+4. Add Response Assertion → check:
+   - Response Code = 200
+   - Body contains product listing elements (if accessible)
+5. Add Listener → View Results Tree + Summary Report
+Expected Outcome:
+- HTTP request executes successfully (may be blocked by Cloudflare)
+- If accessible, response contains search results listing
+- Demonstrates search request structure
+Notes:
+- Direct access may return HTTP 403 (Cloudflare block)
+- This scenario demonstrates attempt on the real system
+—
+
+
+Scenario 2 – Mock Server Search
+Description:
+Simulate search on a mock server using a valid keyword.
+Steps:
+1. Thread Group → 1 virtual user, Loop count = 1
+2. Add HTTP Header Manager → set User-Agent, Accept headers
+3. Add HTTP Request → GET request to Postman Echo (postman-echo.com)
+   - Parameters: foo1 = bar1 and foo2 = bar2
+4. Add Response Assertion → check:
+   - Response Code = 200
+   - Body contains “foo1" and “foo2” (simulating product listing)
+6. Add Listener → View Results Tree + Summary Report
+Expected Outcome:
+- Request executes successfully (HTTP 200)
+- Response contains simulated product listing
+Notes:
+- Ensures search & listing validation works without real site access
+
+
+
+
+General Notes
+- UI automation is not included, only backend HTTP requests are tested
+- Assertions (Response Code, Body contains) validate the correctness of the search module
+- Mock server allows testing when real n11.com access is blocked
+- Thread Group configured with 1 user satisfies the minimal load requirement

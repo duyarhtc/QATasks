@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Suite" parallel="methods" thread-count="3">
+    <test name="Regression">
+        <classes>
+            <class name="tests.CreatePetTest"/>
+            <class name="tests.DeletePetTest"/>
+            <class name="tests.ReadPetTest"/>
+            <class name="tests.UpdatePetTest"/>
+            <class name="tests.ReadDeletedPetTest"/>
+            <class name="tests.ReadNonExistingPetTest"/>
+            <class name="tests.ReadNegativeIdPetTest"/>
+            <class name="tests.CreatePetWithoutBodyTest"/>
+            <class name="tests.CreatePetWrongContentTypeTest"/>
+
+
+
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+
+</suite>

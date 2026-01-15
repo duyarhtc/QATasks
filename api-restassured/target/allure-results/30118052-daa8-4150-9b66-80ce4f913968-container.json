@@ -1,0 +1,1 @@
+{"uuid":"30118052-daa8-4150-9b66-80ce4f913968","name":"tests.CreatePetWrongContentTypeTest","children":["6312f7fa-c4ac-44d7-924f-30797f75996e"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1768510229170,"stop":1768510229170}],"afters":[],"start":1768510227624,"stop":1768510231487}

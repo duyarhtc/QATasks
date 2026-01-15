@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-15T23:50:27 GMT+03:00" name="API Suite" finished-at="2026-01-15T23:50:31 GMT+03:00" duration-ms="3834">
+    <groups>
+    </groups>
+    <test started-at="2026-01-15T23:50:27 GMT+03:00" name="Regression" finished-at="2026-01-15T23:50:31 GMT+03:00" duration-ms="3834">
+      <class name="tests.CreatePetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreatePetTest@32b260fa]" started-at="2026-01-15T23:50:29 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createPet_positive()[pri:1, instance:tests.CreatePetTest@32b260fa]" started-at="2026-01-15T23:50:29 GMT+03:00" name="createPet_positive" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPet_positive -->
+      </class> <!-- tests.CreatePetTest -->
+      <class name="tests.DeletePetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeletePetTest@fba92d3]" started-at="2026-01-15T23:50:30 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:30 GMT+03:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deletePet_positive()[pri:4, instance:tests.DeletePetTest@fba92d3]" started-at="2026-01-15T23:50:30 GMT+03:00" name="deletePet_positive" finished-at="2026-01-15T23:50:31 GMT+03:00" depends-on-methods="getPet_positive" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePet_positive -->
+      </class> <!-- tests.DeletePetTest -->
+      <class name="tests.ReadDeletedPetTest">
+        <test-method signature="getDeletedPet_negative()[pri:5, instance:tests.ReadDeletedPetTest@71238fc2]" started-at="2026-01-15T23:50:29 GMT+03:00" name="getDeletedPet_negative" finished-at="2026-01-15T23:50:30 GMT+03:00" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDeletedPet_negative -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReadDeletedPetTest@71238fc2]" started-at="2026-01-15T23:50:29 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- tests.ReadDeletedPetTest -->
+      <class name="tests.CreatePetWithoutBodyTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreatePetWithoutBodyTest@3d6f0054]" started-at="2026-01-15T23:50:27 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:27 GMT+03:00" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createPet_withoutBody_negative()[pri:0, instance:tests.CreatePetWithoutBodyTest@3d6f0054]" started-at="2026-01-15T23:50:27 GMT+03:00" name="createPet_withoutBody_negative" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPet_withoutBody_negative -->
+      </class> <!-- tests.CreatePetWithoutBodyTest -->
+      <class name="tests.CreatePetWrongContentTypeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreatePetWrongContentTypeTest@505fc5a4]" started-at="2026-01-15T23:50:29 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createPet_WrongContentType_negative()[pri:0, instance:tests.CreatePetWrongContentTypeTest@505fc5a4]" started-at="2026-01-15T23:50:29 GMT+03:00" name="createPet_WrongContentType_negative" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPet_WrongContentType_negative -->
+      </class> <!-- tests.CreatePetWrongContentTypeTest -->
+      <class name="tests.ReadNonExistingPetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReadNonExistingPetTest@2a54a73f]" started-at="2026-01-15T23:50:27 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:27 GMT+03:00" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getNonExistingPet_negative()[pri:0, instance:tests.ReadNonExistingPetTest@2a54a73f]" started-at="2026-01-15T23:50:27 GMT+03:00" name="getNonExistingPet_negative" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNonExistingPet_negative -->
+      </class> <!-- tests.ReadNonExistingPetTest -->
+      <class name="tests.UpdatePetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UpdatePetTest@fa49800]" started-at="2026-01-15T23:50:30 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:30 GMT+03:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updatePet_positive()[pri:3, instance:tests.UpdatePetTest@fa49800]" started-at="2026-01-15T23:50:30 GMT+03:00" name="updatePet_positive" finished-at="2026-01-15T23:50:31 GMT+03:00" depends-on-methods="getPet_positive" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePet_positive -->
+      </class> <!-- tests.UpdatePetTest -->
+      <class name="tests.ReadNegativeIdPetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReadNegativeIdPetTest@16a0ee18]" started-at="2026-01-15T23:50:27 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:27 GMT+03:00" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getNegativeIdPet_negative()[pri:0, instance:tests.ReadNegativeIdPetTest@16a0ee18]" started-at="2026-01-15T23:50:27 GMT+03:00" name="getNegativeIdPet_negative" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNegativeIdPet_negative -->
+      </class> <!-- tests.ReadNegativeIdPetTest -->
+      <class name="tests.ReadPetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReadPetTest@662b4c69]" started-at="2026-01-15T23:50:29 GMT+03:00" name="setup" finished-at="2026-01-15T23:50:29 GMT+03:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getPet_positive()[pri:2, instance:tests.ReadPetTest@662b4c69]" started-at="2026-01-15T23:50:29 GMT+03:00" name="getPet_positive" finished-at="2026-01-15T23:50:30 GMT+03:00" depends-on-methods="createPet_positive" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPet_positive -->
+      </class> <!-- tests.ReadPetTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- API Suite -->
+</testng-results>
